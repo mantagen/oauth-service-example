@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Auth</title>
+    </head>
+    <body>
+        <form action="/authorize" method="POST">
+            <input name="username" />
+            <input name="password" type="password" />
+            <input name="client_id" value="{{client_id}}" hidden />
+            <input name="redirect_uri" value="{{redirect_uri}}" hidden />
+            <button type="submit">Authorize!</button>
+        </form>
+    </body>
+</html>
